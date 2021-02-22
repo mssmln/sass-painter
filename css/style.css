@@ -18,7 +18,7 @@ header {
   height: 100px;
 }
 header .top, header .bottom {
-  background-color: #101010;
+  background-color: red;
 }
 header .top {
   height: calc(100px - 50px - 5px);

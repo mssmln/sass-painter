@@ -6,13 +6,19 @@ header{
   height: $h_100px;
 
   .top,.bottom{
-    background-color: $col_bla;
+    // background-color: $col_bla;
+    background-color: red;
   }
   .top{
     height: calc(#{$h_100px} - #{$h-50px} - 5px);
+
+    nav{
+      @include flex(flex-end);
+    }
   }
   .bottom{
     height: calc(#{$h_100px} - #{$h_50px} + 5px);
+
   }
 
 }
