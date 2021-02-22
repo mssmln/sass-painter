@@ -6,11 +6,17 @@
   }
 }
 
-@mixin flex($direction:row,$justify,$align:center){
+@mixin flex($justify,$direction:row,$align:center){
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin fontAwesome($content){
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: $content;
 }
 
 

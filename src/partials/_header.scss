@@ -14,6 +14,23 @@ header{
 
     nav{
       @include flex(flex-end);
+      ul{
+        @include flex(flex-start);
+        list-style: none;
+        padding-top: $pad_10px;
+
+        li{
+          margin-right: 20px;
+          &:before:first-child{
+            @include fontAwesome("\f879");
+          }
+
+          a{
+            text-decoration: none;
+            color: $hea_top;
+          }
+        }
+      }
     }
   }
   .bottom{

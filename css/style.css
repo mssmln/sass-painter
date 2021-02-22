@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,32 @@ header .top, header .bottom {
 }
 header .top {
   height: calc(100px - 50px - 5px);
+}
+header .top nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .top nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding-top: 10px;
+}
+header .top nav ul li {
+  margin-right: 20px;
+}
+header .top nav ul li:before:first-child {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+header .top nav ul li a {
+  text-decoration: none;
+  color: #8e9598;
 }
 header .bottom {
   height: calc(100px - 50px + 5px);
