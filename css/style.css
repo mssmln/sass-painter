@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.bgc-header {
+  background-color: #101010;
+}
+
+header {
+  height: 100px;
+}
+header .top, header .bottom {
+  background-color: #101010;
+}
+header .top {
+  height: calc(100px - 50px - 5px);
+}
+header .bottom {
+  height: calc(100px - 50px + 5px);
+}
