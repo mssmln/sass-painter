@@ -10,6 +10,12 @@
   }
 }
 
+@for $i from 1 through 5 {
+  .f-s-#{$i * 10} {
+    font-size: 10px * $i;
+  }
+}
+
 $i: 1;
 @while $i < 6 {
   .pad-#{$i * 10} {

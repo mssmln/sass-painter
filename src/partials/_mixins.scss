@@ -2,8 +2,13 @@
   .container{
     width: $desktop;
     margin: 0 auto;
-    background-color: red;
   }
+}
+
+@mixin clearFix{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @mixin flex($justify,$direction:row,$align:center){
@@ -25,4 +30,10 @@
   top: $altezzaHeaderBottom;
   display: none;
   width: 300px;
+}
+
+@mixin absolute2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }

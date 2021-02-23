@@ -3,9 +3,19 @@
   height: 500px;
   background-size: cover;
   background-position: center;
+  position: $relative;
+  &::after{
+    @include clearFix;
+  }
 
   .title{
-    height: 300px;
-    
+
+    img{
+      width: 200px;
+      margin-top: 40px;
+    }
+  }
+  .autore {
+    @include absolute2;
   }
 }

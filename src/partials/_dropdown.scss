@@ -1,6 +1,7 @@
 li.parent-dropdown{
   position: $relative;
   .dropdown{
+    z-index: 1;
     background-color: white;
     color: black;
     @include absolute;
