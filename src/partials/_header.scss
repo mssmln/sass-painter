@@ -6,8 +6,7 @@ header{
   height: $h_100px;
 
   .top,.bottom{
-    // background-color: $col_bla;
-    background-color: red;
+    background-color: $col_bla;
   }
   .top{
     height: calc(#{$h_100px} - #{$h-50px} - 5px);
@@ -21,35 +20,51 @@ header{
 
         li{
           margin-right: 20px;
-          &:before:first-child{
+          &:first-child:before{
             @include fontAwesome("\f879");
+          }
+          &:nth-child(2):before{
+            @include fontAwesome("\f27a");
+          }
+          &:nth-child(3):before{
+            @include fontAwesome("\f007");
+          }
+          &:last-child:before{
+            @include fontAwesome("\f07a");
+          }
+          &:first-child:before,
+          &:nth-child(2):before,
+          &:nth-child(3):before,
+          &:last-child:before{
+            margin-right: 5px;
+            vertical-align: $ver_ali_mid;
+            color: $col_font_awe;
           }
 
           a{
             text-decoration: none;
             color: $hea_top;
+            vertical-align: $ver_ali_mid;
           }
         }
+      }
+      select{
+        margin-top: $pad_10px;
       }
     }
   }
   .bottom{
     height: calc(#{$h_100px} - #{$h_50px} + 5px);
+    @include flex(space-between);
 
+    .logo{
+      img{
+        width: $h_100px;
+      }
+    }
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

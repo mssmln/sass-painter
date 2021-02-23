@@ -19,6 +19,13 @@
   content: $content;
 }
 
+@mixin absolute {
+  position: absolute;
+  left: 0;
+  top: $altezzaHeaderBottom;
+  display: none; 
+  width: 300px;
+}
 
 
 

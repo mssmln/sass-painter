@@ -1,5 +1,11 @@
-// main {
-//   background-image: url('../img/bg-painter-home.jpg');
-//   height: 600px;
-//   background-size: cover;
-// }
+#jumbotron{
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/bg-painter-home.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+
+  .title{
+    height: 300px;
+    
+  }
+}

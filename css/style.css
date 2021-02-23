@@ -1,4 +1,64 @@
 @charset "UTF-8";
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-t-40 {
+  margin-top: 40px;
+}
+
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-t-40 {
+  padding-top: 40px;
+}
+
+.p-t-50 {
+  padding-top: 50px;
+}
+
+.pad-10 {
+  padding: 10px;
+}
+
+.pad-20 {
+  padding: 20px;
+}
+
+.pad-30 {
+  padding: 30px;
+}
+
+.pad-40 {
+  padding: 40px;
+}
+
+.pad-50 {
+  padding: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +79,7 @@ header {
   height: 100px;
 }
 header .top, header .bottom {
-  background-color: red;
+  background-color: #101010;
 }
 header .top {
   height: calc(100px - 50px - 5px);
@@ -41,15 +101,106 @@ header .top nav ul {
 header .top nav ul li {
   margin-right: 20px;
 }
-header .top nav ul li:before:first-child {
+header .top nav ul li:first-child:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
 }
+header .top nav ul li:nth-child(2):before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+header .top nav ul li:nth-child(3):before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+header .top nav ul li:last-child:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+header .top nav ul li:first-child:before, header .top nav ul li:nth-child(2):before, header .top nav ul li:nth-child(3):before, header .top nav ul li:last-child:before {
+  margin-right: 5px;
+  vertical-align: middle;
+  color: #009cff;
+}
 header .top nav ul li a {
   text-decoration: none;
   color: #8e9598;
+  vertical-align: middle;
+}
+header .top nav select {
+  margin-top: 10px;
 }
 header .bottom {
   height: calc(100px - 50px + 5px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bottom .logo img {
+  width: 100px;
+}
+
+.bottom nav {
+  height: 100%;
+}
+.bottom nav ul.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+.bottom nav ul.main li.parent-dropdown {
+  height: 100%;
+  margin-right: 50px;
+  padding: 10px;
+  color: white;
+}
+.bottom nav ul.main li.parent-dropdown:first-child:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  vertical-align: middle;
+}
+.bottom nav ul.main li.parent-dropdown:hover, .bottom nav ul.main li.parent-dropdown:hover .dropdown {
+  background-color: white;
+  color: black;
+}
+.bottom nav ul.main li.parent-dropdown:hover .dropdown {
+  display: block;
+}
+
+li.parent-dropdown {
+  position: relative;
+}
+li.parent-dropdown .dropdown {
+  background-color: white;
+  color: black;
+  position: absolute;
+  left: 0;
+  top: 55px;
+  display: none;
+  width: 300px;
+}
+li.parent-dropdown .dropdown ul {
+  list-style: none;
+}
+li.parent-dropdown .dropdown ul li:hover {
+  background-color: grey;
+}
+
+#jumbotron {
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/bg-painter-home.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+#jumbotron .title {
+  height: 300px;
 }

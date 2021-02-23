@@ -1,3 +1,23 @@
+li.parent-dropdown{
+  position: $relative;
+  .dropdown{
+    background-color: white;
+    color: black;
+    @include absolute;
+    ul{
+      list-style: none;
+      li:hover{
+        background-color: grey;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 // li.parent-dropdown{
 //   position: relative;
 //

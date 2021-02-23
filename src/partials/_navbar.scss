@@ -1,20 +1,28 @@
-// nav.navbar {
-//   height: 100%;
-//   ul {
-//     @include flex(space-between);
-//     li {
-//       padding: $padding-20;
-//       margin-right: $margin-20;
-//       a {
-//         color: $colorWhite;
-//       }
-//       &:hover {
-//         background-color: $colorWhite;
-//
-//         a {
-//           color: $colorBlack;
-//         }
-//       }
-//     }
-//   }
-// }
+.bottom nav {
+  height: $h_100pc;
+
+  ul.main{
+    @include flex(space-between);
+    list-style: none;
+    height: $h_100pc; // da verificare
+
+    li.parent-dropdown{
+      height: $h_100pc; // da verificare
+      margin-right: 50px;
+      padding: 10px;
+      color: white;
+      &:first-child:after{
+        @include fontAwesome("\f078");
+        vertical-align: $ver_ali_mid;
+      }
+      &:hover, &:hover .dropdown{
+        background-color: white;
+        color: black;
+      }
+      &:hover .dropdown{
+        display: block;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+@for $i from 1 through 5 {
+  .m-t-#{$i * 10} {
+    margin-top: 10px * $i;
+  }
+}
+
+@for $i from 1 through 5 {
+  .p-t-#{$i * 10} {
+    padding-top: 10px * $i;
+  }
+}
+
+$i: 1;
+@while $i < 6 {
+  .pad-#{$i * 10} {
+    padding: 10px * $i;
+  }
+  $i : $i + 1;
+}
